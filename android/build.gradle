@@ -277,13 +277,13 @@ repositories {
 def kotlin_version = getExtOrDefault('kotlinVersion')
 
 dependencies {
-  if (REACT_NATIVE_VERSION >= 71) {
-      implementation "com.facebook.react:react-android:"
-      implementation "com.facebook.react:hermes-android:"
-  } else {
+  //if (REACT_NATIVE_VERSION >= 71) {
+  //    implementation "com.facebook.react:react-android:"
+  //    implementation "com.facebook.react:hermes-android:"
+  //} else {
       // noinspection GradleDynamicVersion
       implementation 'com.facebook.react:react-native:+'
-  }
+  //}
 
   if (ENABLE_FRAME_PROCESSORS) {
     implementation project(':react-native-reanimated')
