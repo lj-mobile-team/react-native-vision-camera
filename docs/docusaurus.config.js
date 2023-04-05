@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
-  favicon: './favicon.ico',
+  favicon: '/favicon.ico',
   organizationName: 'mrousavy',
   projectName: 'react-native-vision-camera',
   themeConfig: {
@@ -115,7 +115,7 @@ module.exports = {
       },
       {
         name: 'og:image',
-        content: 'https://www.react-native-vision-camera.com/img/11.png'
+        content: '/img/11.png'
       },
     ],
     announcementBar: {
@@ -143,6 +143,10 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-FX9Q0YKV7S',
+          anonymizeIP: false,
         },
       },
     ],
